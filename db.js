@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-//Define mongodb connection url
-// const mongoURL = ''       
-// const mongoURL = process.env.MONGODB_URL_LOCAL  //local database
-const mongoURL = process.env.MONGODB_URL;   //global database keep in dotenv file
+//Define mongodb connection url      
+const mongoURL = process.env.MONGODB_URL_LOCAL  //local database
+// const mongoURL = process.env.MONGODB_URL;   //global database keep in dotenv file store in atlas
 
 //set up mongodb connection
 mongoose.connect(mongoURL, {
